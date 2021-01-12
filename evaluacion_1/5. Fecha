@@ -1,0 +1,33 @@
+def fecha():
+  a=input("Que dia es: ")
+  b=input("Que mes es: ")
+  c=input("Que ano es: ")
+  print a ,"de"
+  if (b==1):
+    print "Enero", "de", c
+  if (b==2):
+    print "Febrero", "de", c
+  if (b==3):
+    print "Marzo", "de", c
+  if (b==4):
+    print "Abril", "de", c
+  if (b==5):
+    print "Mayo", "de", c
+  if (b==6):
+    print "Junio", "de", c
+  if (b==7):
+    print "Julio", "de", c
+  if (b==8):
+    print "Agosto", "de", c
+  if (b==9):
+    print "Septiembre", "de", c
+  if (b==10):
+    print "Octubre", "de", c
+  if (b==11):
+    print "Noviembre", "de", c
+  if (b==12):
+    print "Diciembre", "de", c
+  else:
+    print "Eres tonto"
+
+fecha()

@@ -1,0 +1,10 @@
+def piramide_derecha():
+  h=input("Dime la altura de la piramide: ")
+  a="*"
+  for i in range(h):
+    print a*i
+    a="*"
+  for u in range(h-1):
+    print a*(h-u)
+    a="*"
+piramide_derecha()  

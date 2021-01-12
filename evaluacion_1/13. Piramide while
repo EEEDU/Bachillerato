@@ -1,0 +1,21 @@
+def piramide_while():
+  h=input("Dime la altura de la piramide: ")
+  a="*"
+  e=" "
+  i=1
+  na=1
+  ne=1
+  while (i<=h):
+    while (ne<=h-i):
+      e=e+" "
+      ne=ne+1
+    while (na<2*i-1):
+      a=a+"*"
+      na=na+1
+    print e + a
+    e=" "
+    a="*"
+    na=1
+    ne=1
+    i=i+1
+piramide_while()

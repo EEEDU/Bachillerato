@@ -1,0 +1,23 @@
+#include<iostream>
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(){
+    int a, *pa,num[5];
+	num[0]=9;
+	num[1]=8;
+	num[2]=7;
+    int salir;
+    a=2;
+	pa=&a;
+    printf("El numero es: %d y esta alamacenado en %X",a,&a);
+    //a=nombre de la variable
+    //&a=posicion de memoria donde almaceno la variable a
+	printf("La variable paes un puntero pa=%X",pa);
+	printf("\nprimer numero: %d", num[0]);
+	printf("\nsegundo numero: %d", num[1]);
+	printf("\ntercero numero: %d", num[2]);
+	printf("\notro numero: %d", num[3]);
+	printf("\nnumeros: %d",*(num));
+    std::cin>>salir;
+}

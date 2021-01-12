@@ -1,0 +1,11 @@
+def programa():
+	numero=int(input("Dime un numero: "))
+	x=1
+	for i in range(2,numero):
+		if (numero%i==0):
+			x=x+numero/i
+	if (x==numero):
+		print "El numero es perfecto"
+	else:
+		print "El numero no es perfecto"
+programa()
