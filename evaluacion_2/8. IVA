@@ -1,0 +1,13 @@
+#include<iostream>
+
+
+int main(){
+  char salir;
+  int valor;
+  std::cout<<"Dime cuanto cuesta: ";
+  std::cin>>valor;
+  std::cout<<"Tienes que pagar: ";
+  std::cout<<valor+valor*16/100;
+  std::cout<<" €";
+  std::cin>>salir;           
+}

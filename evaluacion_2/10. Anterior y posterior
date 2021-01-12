@@ -1,0 +1,10 @@
+#include<iostream>
+/*Ejercicio 10. Anterior y posterior*/
+int main(){
+  char salir;
+  int a;
+  std::cout<<"Dime un numero: ";
+  std::cin>>a;
+  std::cout<<"Los numeros anteriores son: "<<a-3<<", "<<a-2<<", "<<a-1<<"\n"<<"Los numeros posteriores son: "<<a+1<<", "<<a+2<<", "<<a+3;
+  std::cin>>salir;
+}

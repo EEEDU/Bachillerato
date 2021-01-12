@@ -1,0 +1,28 @@
+#include<iostream>
+/*el programa te tiene que devolver la palabra per cambiando todas las vocales por u*/
+int dev_lon(char pal[]){
+    int lon=0;
+    int i=0;
+    while(pal[i]!='\0'){
+      lon++;
+      i++;
+    }
+    return(lon);
+}
+int main(){
+    char salir;
+    char pal[10],voc[]={'a','e','i','o'};
+    int i,nvoc;
+    std::cout<<"Dime la palabra: ";
+    std::cin>>pal;
+    for(i=0;i<dev_lon(pal);i++){
+      for(nvoc=0;nvoc<4;nvoc++){
+        if(pal[i]==voc[nvoc]){
+          pal[i]='u';
+      
+        }           
+      }     
+    }
+    std::cout<<"Tu pulubru us: "<<pal;
+    std::cin>>salir;
+}

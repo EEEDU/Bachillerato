@@ -1,0 +1,13 @@
+#include<iostream>
+/*ejercicio 4. Mes con listas*/
+int main(){
+  char salir;
+  int n;
+  std::string mes[12]= {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"};
+  std::cout<<"Que numero de mes es: ";
+  std::cin>>n;
+  n=n-1;
+  std::cout<<"Es ";
+  std::cout<<mes[n];
+  std::cin>>salir;
+}

@@ -1,0 +1,39 @@
+#include<iostream>
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+using namespace std;
+
+int dev_lon(char aux[]){
+    int lon=0;
+    int i=0;
+    while(aux[i]!='\0'){
+      lon++;
+      i++;
+    }
+    return(lon);
+
+}
+int main(){
+  char salir;
+  char *pals[4],aux[20];
+  //Leo las palabras
+  int i, lon;
+  for(i=0;i<4;i++){
+    cout<<"dime la palabra "<<i+1<<": ";
+    cin>>aux;
+    lon=dev_lon(aux);
+    cout<<lon<<"\n";
+    pals[i]=(char*)malloc((lon+1)*sizeof(char));
+    //malloc reserva un espacio en la memoria
+    //sizeof(int) para calcular el numero de bits que ocupa
+    strcpy(pals[i],aux);
+    //strcpy: los dos parametros que tienen son la posicion de memoria de la primera letyra de cada una de las palabras
+  }
+  cout<<"\nLISTA DE PALABRAS:\n";
+  for(i=0;i<4;i++){
+    printf("%s\n",pals[i]);
+  }
+  cin>>salir;
+}

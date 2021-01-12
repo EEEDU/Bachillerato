@@ -1,0 +1,36 @@
+#include<iostream>
+
+using namespace std;
+
+int main() {
+  char salir;
+  int i;
+  struct amigo{
+    int numero;
+    float dinero;
+    char guapo;
+  };
+  amigo misamigos[3];
+  for(i=0;i<3;i++){
+    cout<<"¿Cual es tu numero?\n";
+    //pones el nombre_de_la_estructura.nombre_variable
+    cin>>misamigos[i].numero;
+    cout<<"¿Cuanto dinero tienes?\n";
+    cin>>misamigos[i].dinero;
+    cout<<"¿Eres guapo?";
+    cin>>misamigos[i].guapo;
+    if(misamigos[i].guapo=="si"){
+      cout<<"El amigo es guapo";
+    }
+    if(misamigos[i].guapo=="no"){
+      cout<<"El amigo es feo";
+    }
+    else{
+      cout<<"Eres tonto";
+    }
+    cout<<"El numero: "<<misamigos[i].numero<<"\n";
+    cout<<"El dinero: "<<misamigos[i].dinero<<" €";
+    cout<<"\n";
+  }
+  cin>>salir;
+}

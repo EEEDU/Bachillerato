@@ -1,0 +1,12 @@
+#include <iostream>
+
+
+int main(){
+	char salir;
+	int dolar;
+	std::cout<<"Dime cuantos dolares tienes: ";
+	std::cin>>dolar;
+	std::cout<<dolar*0.9;
+  std::cout<<"€";
+	std::cin>>salir;	
+}

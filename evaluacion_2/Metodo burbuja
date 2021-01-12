@@ -1,0 +1,28 @@
+#include<iostream>
+#include<stdio.h>
+#include<stdlib.h>
+
+using namespace std;
+
+//Metodo burbuja
+
+int main(){
+  char salir;
+  int num[]={4,2,3,5,1};
+  int i,j,aux;
+  //Algoritmo de metodo burbuja
+  for(i=0;i<5;i++){
+    for(j=0;j<5;j++){
+      if(num[j]>num [j+1]){
+        aux=num[j];
+        num[j]=num[j+1];
+        num[j+1]=aux;
+      }
+    }
+  }
+  cout<<"Orden ascendcente: ";
+  for(i=0;i<5;i++){
+    cout<<num[i];
+  }
+  cin>>salir;
+}

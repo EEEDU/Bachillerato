@@ -1,0 +1,34 @@
+#include <iostream>
+
+
+int main(){
+	char salir;
+	int dia;
+	std::cout<<"Dime que dia de la semana es: ";
+	std::cin>>dia;
+	if(dia==1){
+	std::cout<<"Es Lunes";
+	}
+	if(dia==2){
+	std::cout<<"Es Martes";
+	}
+	if(dia==3){
+	std::cout<<"Es Miercoles";
+	}
+	if(dia==4){
+	std::cout<<"Es Jueves";
+	}
+	if(dia==5){
+	std::cout<<"Es Viernes";
+	}
+	if(dia==6){
+	std::cout<<"Es Sabado";
+	}
+	if(dia==7){
+	std::cout<<"Es Domingo";
+	}
+	if(dia>7){
+	std::cout<<"Eres tonto";
+	}
+	std::cin>>salir;	
+}

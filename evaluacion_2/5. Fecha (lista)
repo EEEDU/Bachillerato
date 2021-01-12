@@ -1,0 +1,16 @@
+#include<iostream>
+/*ejercicio 5. Fecha con listas*/
+int main(){
+  char salir;
+  int a,b,c;
+  std::cout<<"Que dia es: ";
+  std::cin>>a;
+  std::string mes[12]= {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"};
+  std::cout<<"Que mes es: ";
+  std::cin>>b;
+  b=b-1;
+  std::cout<<"Que año es: ";
+  std::cin>>c;
+  std::cout<<a<<" de "<<mes[b]<<" de "<<c;
+  std::cin>>salir;
+}

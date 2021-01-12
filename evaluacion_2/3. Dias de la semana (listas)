@@ -1,0 +1,11 @@
+#include <iostream>
+
+int main() {
+  char salir;
+  int n;
+  std::string dia[7]= {"Lunes","Martes","Miercoles","Jueves","Viernes","Sabado","Domingo"};
+  std::cout<<"Que numero de dia es: ";
+  std::cin>>n;
+  std::cout<<"es ";
+  std::cout<<dia[(n-1)];
+}

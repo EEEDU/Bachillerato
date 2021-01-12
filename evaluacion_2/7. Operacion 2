@@ -1,0 +1,32 @@
+#include<iostream>
+
+int main(){
+  char salir;
+  int n1,n2;
+  char operacion;
+  std::cout<<"Dime el primer numero: ";
+  std::cin>>n1;
+  std::cout<<"Dime el segundo numero: ";
+  std::cin>>n2;
+  std::cout<<"Que operacion quieres hacer: ";
+  std::cin>>operacion;
+  if (operacion=='s'){
+    std::cout<<n1+n2;
+  }
+  if (operacion=='r'){
+    std::cout<<n1-n2;
+  }
+  if (operacion=='m'){
+    std::cout<<n1*n2;
+  }
+  if (operacion=='d'){
+    if(n2==0){
+      std::cout<<"ERROR";
+    }
+    else{
+      std::cout<<n1/n2;
+      
+    }
+  }
+  std::cin>>salir;           
+}

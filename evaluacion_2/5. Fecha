@@ -1,0 +1,52 @@
+#include<iostream>
+
+int main(){
+  char salir;
+  int a,b,c;
+  std::cout<<"Dime el numero del dia: ";
+  std::cin>>a;
+  std::cout<<"Dime el numero del mes: ";
+  std::cin>>b;
+  std::cout<<"Dime el numero del ano: ";
+  std::cin>>c;
+  std::cout<<a;
+  if (b==1){
+    std::cout<<" de Enero";
+  }
+  if (b==2){
+    std::cout<<" de Febrero";
+  }
+  if (b==3){
+    std::cout<<" de Marzo";
+  }
+  if (b==4){
+    std::cout<<" de Abril";
+  }
+  if (b==5){
+    std::cout<<" de Mayo";
+  }
+  if (b==6){
+    std::cout<<" de Junio";
+  }
+  if (b==7){
+    std::cout<<" de Julio";
+  }
+  if (b==8){
+    std::cout<<" de Agosto";
+  }
+  if (b==9){
+    std::cout<<" de Septiembre";
+  }
+  if (b==10){
+    std::cout<<" de Octubre";
+  }
+  if (b==11){
+    std::cout<<" de Noviembre";
+  }
+  if (b==12){
+    std::cout<<" de Diciembre";
+  }
+  std::cout<<" de ";
+  std::cout<<c;
+  std::cin>>salir;           
+}

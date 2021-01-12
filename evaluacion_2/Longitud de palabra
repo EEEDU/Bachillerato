@@ -1,0 +1,12 @@
+#include <iostream>
+/*Cambiar las vocales por "u"*/
+int devuelve_longitud(char palabra[]){
+
+}
+
+
+int main(){
+  char salir;
+  
+  std::cin>>salir;
+}

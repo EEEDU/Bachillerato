@@ -1,0 +1,17 @@
+#include<iostream>
+/*9. Salario*/
+int main(){
+  char salir;
+  int h;
+  std::cout<<"Cuantas horas has trabajado: ";
+  std::cin>>h;
+  std::cout<<"Te debemos: ";
+  if (h<=40){
+    std::cout<<h*30;
+  }
+  else{
+    std::cout<<40*30+(h-40)*30*1.5;
+  }
+  std::cout<<" €";
+  std::cin>>salir;
+}

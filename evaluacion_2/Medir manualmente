@@ -1,0 +1,27 @@
+#include <iostream>
+/*Un programa que le des un a palabra y te la mida*/
+int main(){
+  char salir;
+  int i;
+  char p[10];
+  int lon=0;
+  std::cout<<"Dime tu nombre: ";
+  std::cin>>p;
+  std::cout<<"\nTe llamas: ";
+  std::cout<<p;
+  std::cout<<"\nTu inicial: ";
+  std::cout<<p[0];
+  std::cout<<"\nLas letras de tu nombre son:\n";
+  /*Contamos las letras de tu nombre*/
+  for(i=0;i<=9;i++){
+    while(p[i]!='\0'){
+      lon++;
+    }
+  }
+  for(i=1;i<=lon;i++){
+    std::cout<<"Es la palabra "<<i<<": ";
+    std::cout<<p[i-1];
+    std::cout<<"\n";
+  }
+  std::cin>>salir;
+}

@@ -1,0 +1,48 @@
+#include <iostream>
+
+int main() {
+  char salir;
+  int mes;
+  std::cout<<"Dime un numero de mes: ";
+  std::cin>>mes;
+  if (mes==1){
+    std::cout<<"Es Enero";
+  }
+  if (mes==2){
+    std::cout<<"Es Febrero";
+  }
+  if (mes==3){
+    std::cout<<"Es Marzo";
+  }
+  if (mes==4){
+    std::cout<<"Es Abril";
+  }
+  if (mes==5){
+    std::cout<<"Es Mayo";
+  }
+  if (mes==6){
+    std::cout<<"Es Junio";
+  }
+  if (mes==7){
+    std::cout<<"Es Julio";
+  }
+  if (mes==8){
+    std::cout<<"Es Agosto";
+  }
+  if (mes==9){
+    std::cout<<"Es Septiembre";
+  }
+  if (mes==10){
+    std::cout<<"Es Octubre";
+  }
+  if (mes==11){
+    std::cout<<"Es Noviembre";
+  }
+  if (mes==12){
+    std::cout<<"Es Diciembre";
+  }
+  if (mes>12){
+    std::cout<<"Eres tonto";
+  }
+  std::cin>>salir;
+}

@@ -1,0 +1,23 @@
+#include<iostream>
+/*el programa te cuenta las letras que tiene la palabra*/
+int dev_lon(char pal[]){
+    int lon=0;
+    int i=0;
+    while(pal[i]!='\0'){
+      lon++;
+      i++;
+    }
+    return(lon);
+}
+int main(){
+    char salir;
+    char pal[10];
+    int i,n=0;
+    std::cout<<"Dime la palabra: ";
+    std::cin>>pal;
+    for(i=0;i<dev_lon(pal);i++){
+      n++;
+    }
+    std::cout<<n;
+    std::cin>>salir;
+}
